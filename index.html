@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Resume Builder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Resume Builder</h1>
+        <form action="/generate" method="POST">
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone</label>
+            <input type="text" name="phone" required>
+
+            <label>Skills</label>
+            <textarea name="skills" required></textarea>
+
+            <label>Education</label>
+            <textarea name="education" required></textarea>
+
+            <label>Experience</label>
+            <textarea name="experience" required></textarea>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </div>
+</body>
+</html>
