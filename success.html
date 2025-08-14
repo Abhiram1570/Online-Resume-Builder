@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Generated</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Generated Successfully!</h1>
+        <p>Your PDF is ready to download.</p>
+        <a href="/download/{{ filename }}" class="btn">Download Resume</a>
+    </div>
+</body>
+</html>
